@@ -13,19 +13,20 @@ body{
   font-family:-apple-system,BlinkMacSystemFont,Arial;
   background:linear-gradient(135deg,#020617,#0f172a);
   color:white;
+  line-height:1.4;
 }
 
 .container{
-  max-width:480px;
+  max-width:500px;
   margin:auto;
-  padding:25px 20px;
+  padding:25px 18px;
 }
 
 .brand{
   text-align:center;
   font-weight:bold;
   color:#38bdf8;
-  font-size:1.3rem;
+  font-size:1.4rem;
 }
 
 .hero{
@@ -34,7 +35,7 @@ body{
 }
 
 .hero h1{
-  font-size:1.9rem;
+  font-size:2rem;
   margin:10px 0;
   color:#38bdf8;
 }
@@ -49,10 +50,15 @@ body{
   width:100%;
   padding:14px;
   margin-top:12px;
-  border-radius:10px;
+  border-radius:12px;
   font-weight:bold;
   text-align:center;
   text-decoration:none;
+  transition:0.2s ease;
+}
+
+.btn:hover{
+  transform:scale(1.02);
 }
 
 .btn.primary{
@@ -69,12 +75,17 @@ body{
 .card{
   background:#1e293b;
   padding:18px;
-  border-radius:14px;
+  border-radius:16px;
   margin-top:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card h3{
+  margin-bottom:10px;
 }
 
 .product{
-  margin-top:12px;
+  margin-top:15px;
 }
 
 .product-img{
@@ -90,16 +101,21 @@ body{
   font-weight:bold;
   margin-top:6px;
   color:#facc15;
+  font-size:1.1rem;
+}
+
+.badge{
+  font-size:0.7rem;
+  color:#22c55e;
 }
 
 .footer{
   text-align:center;
-  margin-top:25px;
+  margin-top:30px;
   font-size:0.75rem;
   opacity:0.6;
 }
 </style>
-
 </head>
 
 <body>
@@ -117,20 +133,19 @@ body{
 
   <div class="small" style="margin-top:10px;">
     ✔ 30-day guarantee<br>
-    ✔ Secure checkout (Stripe)<br>
+    ✔ Secure checkout<br>
     ✔ Fast worldwide shipping
   </div>
 </div>
 
-<!-- POWER -->
+<!-- POWER BANK -->
 <div class="card" id="shop">
-  <h3>🔋 Power Bank</h3>
+  <h3>🔋 Power Bank <span class="badge">Best Seller</span></h3>
 
-  <img class="product-img" src="/images/powerbank.jpg" alt="Power Bank">
+  <img class="product-img" src="./images/powerbank.jpg" alt="Power Bank">
 
   <p class="small">Charge your phone up to 3x anywhere.</p>
   <p class="price">$39.99</p>
-  <p class="small">⭐⭐⭐⭐⭐ 1,200+ sold</p>
 
   <a href="https://buy.stripe.com/5kQeV66yL8CMfsjbrq2ZO0j" class="btn primary">
     ⚡ Buy Now
@@ -141,11 +156,10 @@ body{
 <div class="card">
   <h3>🔌 Universal Adapter</h3>
 
-  <img class="product-img" src="/images/adapter.jpg" alt="Travel Adapter">
+  <img class="product-img" src="./images/adapter.jpg" alt="Travel Adapter">
 
   <p class="small">Works in 150+ countries worldwide.</p>
   <p class="price">$29.99</p>
-  <p class="small">⭐⭐⭐⭐⭐ Travel essential</p>
 
   <a href="https://buy.stripe.com/9B65kw2ivcT2dkbgLK2ZO0k" class="btn primary">
     🌍 Get Adapter
@@ -157,40 +171,41 @@ body{
   <h3>🎒 Travel Essentials</h3>
 
   <div class="product">
-    <img class="product-img" src="/images/toiletry.jpg" alt="Toiletry Organizer">
+    <img class="product-img" src="./images/toiletry.jpg">
     <p class="price">$19.99</p>
     <a href="https://buy.stripe.com/cNicMYcX91ak4NFanm2ZO0l" class="btn primary">🧼 Toiletry Organizer</a>
   </div>
 
   <div class="product">
-    <img class="product-img" src="/images/neckpillow.jpg" alt="Neck Pillow">
+    <img class="product-img" src="./images/neckpillow.jpg">
     <p class="price">$24.99</p>
     <a href="https://buy.stripe.com/14AfZa2iv8CM0xpfHG2ZO0m" class="btn alt">😴 Neck Pillow</a>
   </div>
 
   <div class="product">
-    <img class="product-img" src="/images/luggage.jpg" alt="Luggage Scale">
+    <img class="product-img" src="./images/luggage.jpg">
     <p class="price">$14.99</p>
     <a href="https://buy.stripe.com/14A7sEaP11aka7Zbrq2ZO0n" class="btn alt">⚖️ Luggage Scale</a>
   </div>
 
   <div class="product">
-    <img class="product-img" src="/images/passport.jpg" alt="Passport Holder">
+    <img class="product-img" src="./images/passport.jpg">
     <p class="price">$12.99</p>
     <a href="https://buy.stripe.com/8x2cMY5uH4mw0xp7ba2ZO0o" class="btn alt">🛂 Passport Holder</a>
   </div>
 
   <div class="product">
-    <img class="product-img" src="/images/packing.jpg" alt="Packing Cubes">
+    <img class="product-img" src="./images/packing.jpg">
     <p class="price">$22.99</p>
     <a href="https://buy.stripe.com/14AcMYe1dg5ebc3anm2ZO0p" class="btn alt">📦 Packing Cubes</a>
   </div>
 
 </div>
 
-<!-- CTA -->
+<!-- FINAL CTA -->
 <div class="card">
   <h3>Don’t Travel Unprepared</h3>
+  <p class="small">Grab your essentials before your next trip.</p>
   <a href="#shop" class="btn primary">🚀 Shop Now</a>
 </div>
 
