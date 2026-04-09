@@ -41,7 +41,17 @@ body{
 
 .small{
   font-size:0.85rem;
-  opacity:0.85;
+  opacity:0.9;
+}
+
+.price{
+  margin-top:6px;
+  font-size:0.9rem;
+}
+
+.price s{
+  opacity:0.6;
+  margin-right:6px;
 }
 
 .btn{
@@ -76,14 +86,6 @@ body{
   box-shadow:0 0 20px rgba(56,189,248,0.08);
 }
 
-.grid{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  margin-top:10px;
-}
-
-/* FIXED IMAGE STYLE */
 .product-img{
   width:100%;
   height:220px;
@@ -132,18 +134,39 @@ body{
   </p>
 </div>
 
+<!-- BUNDLE -->
+<div class="card">
+  <h3>🔥 Travel Starter Pack</h3>
+
+  <img class="product-img" src="https://m.media-amazon.com/images/I/71G5x6G4bDL._AC_SL1500_.jpg">
+
+  <p class="small">
+  ✔ Power Bank<br>
+  ✔ Adapter<br>
+  ✔ Neck Pillow
+  </p>
+
+  <p class="price"><s>$79</s> <strong>$59</strong></p>
+  <p class="small" style="color:#f87171;">🔥 Most Popular</p>
+
+  <a href="https://buy.stripe.com/5kQeV66yL8CMfsjbrq2ZO0j" class="btn primary">
+    🚀 Get Bundle
+  </a>
+</div>
+
 <!-- POWER -->
 <div class="card" id="shop">
-  <h3>🔋 Power Anywhere</h3>
+  <h3>🔋 Power Bank</h3>
 
   <img class="product-img" src="https://m.media-amazon.com/images/I/71Q2c9YkSCL._AC_SL1500_.jpg">
 
-  <p class="small">⭐⭐⭐⭐⭐ 1,200+ travelers love this</p>
-  <p class="small">🚚 Free shipping today • 🔒 Secure checkout</p>
-  <p class="small" style="color:#f87171;">🔥 Selling fast — limited stock</p>
+  <p class="small" style="color:#38bdf8;">⭐ Best Seller</p>
+  <p class="price"><s>$49</s> <strong>$29</strong></p>
 
-  <a href="https://buy.stripe.com/5kQeV66yL8CMfsjbrq2ZO0j" target="_blank" class="btn primary">
-    ⚡ Buy Power Bank
+  <p class="small">🚚 Free shipping • 🔒 Secure checkout</p>
+
+  <a href="https://buy.stripe.com/5kQeV66yL8CMfsjbrq2ZO0j" class="btn primary">
+    ⚡ Buy Now
   </a>
 </div>
 
@@ -153,21 +176,11 @@ body{
 
   <img class="product-img" src="https://m.media-amazon.com/images/I/61S0lXzK8kL._AC_SL1500_.jpg">
 
-  <p class="small">⭐⭐⭐⭐⭐ Essential travel item</p>
-  <p class="small">🚚 Free shipping today</p>
+  <p class="small" style="color:#38bdf8;">⭐ Best Seller</p>
+  <p class="price"><s>$39</s> <strong>$24</strong></p>
 
-  <a href="https://buy.stripe.com/9B65kw2ivcT2dkbgLK2ZO0k" target="_blank" class="btn primary">
+  <a href="https://buy.stripe.com/9B65kw2ivcT2dkbgLK2ZO0k" class="btn primary">
     🌍 Get Adapter
-  </a>
-</div>
-
-<!-- CONNECTIVITY -->
-<div class="card">
-  <h3>📡 Stay Connected</h3>
-  <p class="small">Avoid roaming fees instantly.</p>
-
-  <a href="https://goldylox752.github.io/" target="_blank" class="btn primary">
-    📶 Get Travel Data
   </a>
 </div>
 
@@ -175,17 +188,22 @@ body{
 <div class="card">
   <h3>🎒 Travel Essentials</h3>
 
-  <img class="product-img" src="https://m.media-amazon.com/images/I/71rV2kC8FEL._AC_SL1500_.jpg">
-
   <p class="small">🔥 Bundle & save on must-have gear</p>
 
-  <div class="grid">
-    <a href="https://buy.stripe.com/cNicMYcX91ak4NFanm2ZO0l" target="_blank" class="btn primary">🧼 Toiletry Organizer</a>
-    <a href="https://buy.stripe.com/14AfZa2iv8CM0xpfHG2ZO0m" target="_blank" class="btn alt">😴 Neck Pillow</a>
-    <a href="https://buy.stripe.com/14A7sEaP11aka7Zbrq2ZO0n" target="_blank" class="btn alt">⚖️ Luggage Scale</a>
-    <a href="https://buy.stripe.com/8x2cMY5uH4mw0xp7ba2ZO0o" target="_blank" class="btn alt">🛂 Passport Holder</a>
-    <a href="https://buy.stripe.com/14AcMYe1dg5ebc3anm2ZO0p" target="_blank" class="btn alt">📦 Packing Cubes</a>
-  </div>
+  <img class="product-img" src="https://m.media-amazon.com/images/I/71rV2kC8FEL._AC_SL1500_.jpg">
+  <a href="https://buy.stripe.com/cNicMYcX91ak4NFanm2ZO0l" class="btn primary">🧼 Toiletry Organizer</a>
+
+  <img class="product-img" src="https://m.media-amazon.com/images/I/61v0sLQ0bFL._AC_SL1500_.jpg">
+  <a href="https://buy.stripe.com/14AfZa2iv8CM0xpfHG2ZO0m" class="btn alt">😴 Neck Pillow</a>
+
+  <img class="product-img" src="https://m.media-amazon.com/images/I/61x9F6KJ3LL._AC_SL1500_.jpg">
+  <a href="https://buy.stripe.com/14A7sEaP11aka7Zbrq2ZO0n" class="btn alt">⚖️ Luggage Scale</a>
+
+  <img class="product-img" src="https://m.media-amazon.com/images/I/71cQh6xZ7UL._AC_SL1500_.jpg">
+  <a href="https://buy.stripe.com/8x2cMY5uH4mw0xp7ba2ZO0o" class="btn alt">🛂 Passport Holder</a>
+
+  <img class="product-img" src="https://m.media-amazon.com/images/I/71G5x6G4bDL._AC_SL1500_.jpg">
+  <a href="https://buy.stripe.com/14AcMYe1dg5ebc3anm2ZO0p" class="btn alt">📦 Packing Cubes</a>
 </div>
 
 <!-- CTA -->
