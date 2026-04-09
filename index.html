@@ -75,17 +75,6 @@ body{
   box-shadow:0 8px 25px rgba(0,0,0,0.4);
 }
 
-.product{
-  margin-top:15px;
-}
-
-.product-img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  border-radius:12px;
-}
-
 .price{
   font-weight:bold;
   margin-top:6px;
@@ -98,6 +87,12 @@ body{
   margin-top:30px;
   font-size:0.75rem;
   opacity:0.6;
+}
+
+.divider{
+  height:1px;
+  background:#334155;
+  margin:10px 0;
 }
 </style>
 </head>
@@ -119,8 +114,8 @@ body{
 <!-- POWER BANK -->
 <div class="card" id="shop">
   <h3>🔋 Power Bank</h3>
-  <img class="product-img" src="https://images.unsplash.com/photo-1609592806787-3d9c0bdfc5b9?auto=format&fit=crop&w=1000&q=80">
   <p class="small">Charge your phone anywhere — up to 3 full charges.</p>
+  <div class="divider"></div>
   <p class="price">$39.99</p>
   <a href="https://buy.stripe.com/5kQeV66yL8CMfsjbrq2ZO0j" class="btn primary">⚡ Buy Now</a>
 </div>
@@ -128,46 +123,27 @@ body{
 <!-- ADAPTER -->
 <div class="card">
   <h3>🔌 Universal Travel Adapter</h3>
-  <img class="product-img" src="https://images.unsplash.com/photo-1625822038619-8b0c7f0d7f47?auto=format&fit=crop&w=1000&q=80">
   <p class="small">Works in 150+ countries worldwide.</p>
+  <div class="divider"></div>
   <p class="price">$29.99</p>
   <a href="https://buy.stripe.com/9B65kw2ivcT2dkbgLK2ZO0k" class="btn primary">🌍 Get Adapter</a>
 </div>
 
 <!-- ESSENTIALS -->
 <div class="card">
-  <h3>🎒 Travel Essentials</h3>
+  <h3>🎒 Travel Essentials Bundle</h3>
 
-  <div class="product">
-    <img class="product-img" src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=1000&q=80">
-    <p class="price">$19.99</p>
-    <a href="https://buy.stripe.com/cNicMYcX91ak4NFanm2ZO0l" class="btn primary">🧼 Toiletry Organizer</a>
-  </div>
+  <p class="small">🧼 Toiletry Organizer — $19.99</p>
+  <p class="small">😴 Neck Pillow — $24.99</p>
+  <p class="small">⚖️ Luggage Scale — $14.99</p>
+  <p class="small">🛂 Passport Holder — $12.99</p>
+  <p class="small">📦 Packing Cubes — $22.99</p>
 
-  <div class="product">
-    <img class="product-img" src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1000&q=80">
-    <p class="price">$24.99</p>
-    <a href="https://buy.stripe.com/14AfZa2iv8CM0xpfHG2ZO0m" class="btn alt">😴 Neck Pillow</a>
-  </div>
+  <div class="divider"></div>
 
-  <div class="product">
-    <img class="product-img" src="https://images.unsplash.com/photo-1585386959984-a41552231658?auto=format&fit=crop&w=1000&q=80">
-    <p class="price">$14.99</p>
-    <a href="https://buy.stripe.com/14A7sEaP11aka7Zbrq2ZO0n" class="btn alt">⚖️ Luggage Scale</a>
-  </div>
+  <p class="price">Bundle your travel gear today</p>
 
-  <div class="product">
-    <img class="product-img" src="https://images.unsplash.com/photo-1553531384-cc64ac80f931?auto=format&fit=crop&w=1000&q=80">
-    <p class="price">$12.99</p>
-    <a href="https://buy.stripe.com/8x2cMY5uH4mw0xp7ba2ZO0o" class="btn alt">🛂 Passport Holder</a>
-  </div>
-
-  <div class="product">
-    <img class="product-img" src="https://images.unsplash.com/photo-1612817159949-4b1c3f0a9c1a?auto=format&fit=crop&w=1000&q=80">
-    <p class="price">$22.99</p>
-    <a href="https://buy.stripe.com/14AcMYe1dg5ebc3anm2ZO0p" class="btn alt">📦 Packing Cubes</a>
-  </div>
-
+  <a href="#" class="btn alt">View Bundle Options</a>
 </div>
 
 <!-- CTA -->
