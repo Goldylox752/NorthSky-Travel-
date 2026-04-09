@@ -107,6 +107,12 @@ body{
   <p class="small">⭐⭐⭐⭐⭐ Trusted by 5,000+ travelers</p>
   <h1>Travel Smarter. Stay Powered.</h1>
   <p class="small" style="color:#facc15;">🔥 Limited stock — selling fast</p>
+
+  <!-- ⏳ TIMER (BEST PLACEMENT) -->
+  <p class="small" style="color:#ef4444;">
+    ⏳ Sale ends in: <span id="timer">15:00</span>
+  </p>
+
   <a href="#shop" class="btn primary">🚀 Shop Now</a>
 </div>
 
@@ -152,7 +158,7 @@ body{
   </a>
 </div>
 
-<!-- UPSELL -->
+<!-- 🔥 COMBO (FIXED LINK) -->
 <div class="card">
   <h3>🔥 Frequently Bought Together</h3>
   <p class="small">Travelers grab both to stay powered anywhere.</p>
@@ -170,7 +176,7 @@ body{
     ✅ Save $30 when bundled
   </p>
 
-  <a href="#" class="btn primary">
+  <a href="https://buy.stripe.com/4gM5kw4qD9GQ5RJ8fe2ZO0r" class="btn primary">
     ⚡ Get Combo Deal
   </a>
 </div>
@@ -212,7 +218,7 @@ body{
   </a>
 </div>
 
-<!-- TRUST SECTION -->
+<!-- TRUST -->
 <div class="card">
   <h3>Why Travelers Choose Us</h3>
   <p class="small">✔ 5,000+ happy customers</p>
@@ -220,18 +226,23 @@ body{
   <p class="small">✔ 30-day money back guarantee</p>
 </div>
 
-<!-- CTA -->
-<div class="card">
-  <h3>Don’t Travel Unprepared</h3>
-  <p class="small">Get everything you need before your next trip.</p>
-  <a href="#shop" class="btn primary">🚀 Shop Now</a>
-</div>
-
 <div class="footer">
   © 2026 NorthSky Travel
 </div>
 
 </div>
+
+<!-- ⏳ TIMER SCRIPT -->
+<script>
+let time = 900;
+setInterval(() => {
+  let m = Math.floor(time / 60);
+  let s = time % 60;
+  document.getElementById("timer").innerText =
+    `${m}:${s < 10 ? "0" : ""}${s}`;
+  if (time > 0) time--;
+}, 1000);
+</script>
 
 </body>
 </html>
