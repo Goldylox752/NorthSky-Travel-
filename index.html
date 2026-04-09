@@ -49,7 +49,6 @@ body{
   width:100%;
   padding:14px;
   margin-top:12px;
-  border:none;
   border-radius:10px;
   font-weight:bold;
   text-align:center;
@@ -74,12 +73,15 @@ body{
   margin-top:18px;
 }
 
+.product{
+  margin-top:12px;
+}
+
 .product-img{
   width:100%;
-  height:220px;
+  height:200px;
   object-fit:contain;
   border-radius:10px;
-  margin-top:10px;
   background:#fff;
   padding:10px;
 }
@@ -111,7 +113,7 @@ body{
 <div class="card" id="shop">
   <h3>🔋 Power Bank</h3>
 
-  <img class="product-img" src="/powerbank.jpg" alt="Power Bank">
+  <img class="product-img" src="/images/powerbank.jpg" alt="Power Bank">
 
   <p class="small">⭐⭐⭐⭐⭐ 1,200+ sold</p>
   <p class="small">🚚 Free shipping • 🔒 Secure checkout</p>
@@ -125,7 +127,7 @@ body{
 <div class="card">
   <h3>🔌 Universal Adapter</h3>
 
-  <img class="product-img" src="/adapter.jpg" alt="Travel Adapter">
+  <img class="product-img" src="/images/adapter.jpg" alt="Travel Adapter">
 
   <p class="small">⭐⭐⭐⭐⭐ Travel essential</p>
 
@@ -138,20 +140,31 @@ body{
 <div class="card">
   <h3>🎒 Travel Essentials</h3>
 
-  <img class="product-img" src="/toiletry.jpg" alt="Toiletry Organizer">
-  <a href="https://buy.stripe.com/cNicMYcX91ak4NFanm2ZO0l" class="btn primary">🧼 Toiletry Organizer</a>
+  <div class="product">
+    <img class="product-img" src="/images/toiletry.jpg" alt="Toiletry Organizer">
+    <a href="https://buy.stripe.com/cNicMYcX91ak4NFanm2ZO0l" class="btn primary">🧼 Toiletry Organizer</a>
+  </div>
 
-  <img class="product-img" src="/neckpillow.jpg" alt="Neck Pillow">
-  <a href="https://buy.stripe.com/14AfZa2iv8CM0xpfHG2ZO0m" class="btn alt">😴 Neck Pillow</a>
+  <div class="product">
+    <img class="product-img" src="/images/neckpillow.jpg" alt="Neck Pillow">
+    <a href="https://buy.stripe.com/14AfZa2iv8CM0xpfHG2ZO0m" class="btn alt">😴 Neck Pillow</a>
+  </div>
 
-  <img class="product-img" src="/luggage.jpg" alt="Luggage Scale">
-  <a href="https://buy.stripe.com/14A7sEaP11aka7Zbrq2ZO0n" class="btn alt">⚖️ Luggage Scale</a>
+  <div class="product">
+    <img class="product-img" src="/images/luggage.jpg" alt="Luggage Scale">
+    <a href="https://buy.stripe.com/14A7sEaP11aka7Zbrq2ZO0n" class="btn alt">⚖️ Luggage Scale</a>
+  </div>
 
-  <img class="product-img" src="/passport.jpg" alt="Passport Holder">
-  <a href="https://buy.stripe.com/8x2cMY5uH4mw0xp7ba2ZO0o" class="btn alt">🛂 Passport Holder</a>
+  <div class="product">
+    <img class="product-img" src="/images/passport.jpg" alt="Passport Holder">
+    <a href="https://buy.stripe.com/8x2cMY5uH4mw0xp7ba2ZO0o" class="btn alt">🛂 Passport Holder</a>
+  </div>
 
-  <img class="product-img" src="/packing.jpg" alt="Packing Cubes">
-  <a href="https://buy.stripe.com/14AcMYe1dg5ebc3anm2ZO0p" class="btn alt">📦 Packing Cubes</a>
+  <div class="product">
+    <img class="product-img" src="/images/packing.jpg" alt="Packing Cubes">
+    <a href="https://buy.stripe.com/14AcMYe1dg5ebc3anm2ZO0p" class="btn alt">📦 Packing Cubes</a>
+  </div>
+
 </div>
 
 <!-- CTA -->
