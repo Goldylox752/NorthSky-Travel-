@@ -7,12 +7,20 @@
 <title>NorthSky Travel | Travel Smarter</title>
 
 <style>
+:root{
+  --bg:#020617;
+  --card:#1e293b;
+  --accent:#38bdf8;
+  --highlight:#22c55e;
+  --text:#ffffff;
+}
+
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
   font-family:-apple-system,BlinkMacSystemFont,Arial;
   background:linear-gradient(135deg,#020617,#0f172a);
-  color:white;
+  color:var(--text);
 }
 
 .container{
@@ -21,13 +29,28 @@ body{
   padding:25px 18px;
 }
 
+/* 🌐 NETWORK BAR */
+.network{
+  text-align:center;
+  font-size:13px;
+  margin-bottom:15px;
+}
+
+.network a{
+  color:var(--accent);
+  text-decoration:none;
+  margin:0 6px;
+}
+
+/* BRAND */
 .brand{
   text-align:center;
   font-weight:bold;
-  color:#38bdf8;
+  color:var(--accent);
   font-size:1.4rem;
 }
 
+/* HERO */
 .hero{
   text-align:center;
   margin-top:15px;
@@ -36,7 +59,7 @@ body{
 .hero h1{
   font-size:2rem;
   margin:10px 0;
-  color:#38bdf8;
+  color:var(--accent);
 }
 
 .small{
@@ -44,6 +67,7 @@ body{
   opacity:0.9;
 }
 
+/* BUTTON */
 .btn{
   display:block;
   width:100%;
@@ -53,21 +77,26 @@ body{
   font-weight:bold;
   text-align:center;
   text-decoration:none;
-}
-
-.btn.primary{
-  background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+  background:var(--accent);
   color:#000;
+  transition:0.2s;
 }
 
+.btn:hover{
+  transform:scale(1.03);
+  opacity:0.9;
+}
+
+/* CARD */
 .card{
-  background:#1e293b;
+  background:var(--card);
   padding:18px;
   border-radius:16px;
   margin-top:18px;
   box-shadow:0 8px 25px rgba(0,0,0,0.4);
 }
 
+/* PRICE */
 .price{
   font-weight:bold;
   margin-top:6px;
@@ -88,6 +117,14 @@ body{
   margin:10px 0;
 }
 
+/* TRUST */
+.trust{
+  color:var(--highlight);
+  margin-top:10px;
+  text-align:center;
+}
+
+/* FOOTER */
 .footer{
   text-align:center;
   margin-top:30px;
@@ -101,29 +138,44 @@ body{
 
 <div class="container">
 
+<!-- 🌐 NETWORK -->
+<div class="network">
+  🌐 NorthSky Network:
+  <a href="https://north-sky-ai.vercel.app">AI</a> |
+  <a href="https://north-sky-utilities.vercel.app">Tools</a> |
+  <a href="https://northsky-drones.vercel.app">Drones</a> |
+  <a href="#">Travel</a>
+</div>
+
+<!-- BRAND -->
 <div class="brand">NorthSky Travel 🌍</div>
 
+<!-- HERO -->
 <div class="hero">
   <p class="small">⭐⭐⭐⭐⭐ Trusted by 5,000+ travelers</p>
-  <h1>Travel Smarter. Stay Powered.</h1>
-  <p class="small" style="color:#facc15;">🔥 Limited stock — selling fast</p>
 
-  <!-- ⏳ TIMER (BEST PLACEMENT) -->
+  <h1>Travel Smarter. Stay Powered.</h1>
+
+  <p class="small">Never run out of battery or adapters again.</p>
+
   <p class="small" style="color:#ef4444;">
     ⏳ Sale ends in: <span id="timer">15:00</span>
   </p>
 
-  <a href="#shop" class="btn primary">🚀 Shop Now</a>
+  <a href="#shop" class="btn">🚀 Shop Now</a>
 </div>
 
-<!-- POWER BANK -->
+<p class="trust">
+Used across the NorthSky network — helping 1,200+ businesses grow
+</p>
+
+<!-- 🔋 POWER BANK -->
 <div class="card" id="shop">
   <h3>🔋 Power Bank</h3>
   <p class="small">Charge your phone anywhere — up to 3 full charges.</p>
 
   <p class="small">⭐ 4.8/5 (1,200+ reviews)</p>
   <p class="small">🚚 Free Shipping Worldwide</p>
-  <p class="small">🔒 Secure Checkout</p>
 
   <div class="divider"></div>
 
@@ -132,19 +184,17 @@ body{
     $49.99
   </p>
 
-  <a href="https://buy.stripe.com/5kQeV66yL8CMfsjbrq2ZO0j" class="btn primary">
+  <a href="https://buy.stripe.com/5kQeV66yL8CMfsjbrq2ZO0j" class="btn">
     ⚡ Buy Now
   </a>
 </div>
 
-<!-- ADAPTER -->
+<!-- 🔌 ADAPTER -->
 <div class="card">
-  <h3>🔌 Universal Travel Adapter</h3>
-  <p class="small">Works in 150+ countries worldwide.</p>
+  <h3>🔌 Travel Adapter</h3>
+  <p class="small">Works in 150+ countries.</p>
 
   <p class="small">⭐ 4.7/5 (900+ reviews)</p>
-  <p class="small">🚚 Free Shipping Worldwide</p>
-  <p class="small">🔒 Secure Checkout</p>
 
   <div class="divider"></div>
 
@@ -153,19 +203,18 @@ body{
     $39.99
   </p>
 
-  <a href="https://buy.stripe.com/9B65kw2ivcT2dkbgLK2ZO0k" class="btn primary">
+  <a href="https://buy.stripe.com/9B65kw2ivcT2dkbgLK2ZO0k" class="btn">
     🌍 Get Adapter
   </a>
 </div>
 
-<!-- 🔥 COMBO (FIXED LINK) -->
+<!-- 🔥 COMBO -->
 <div class="card">
-  <h3>🔥 Frequently Bought Together</h3>
-  <p class="small">Travelers grab both to stay powered anywhere.</p>
+  <h3>🔥 Bundle Deal</h3>
+
+  <p class="small">Power Bank + Adapter</p>
 
   <div class="divider"></div>
-
-  <p class="small">🔋 Power Bank + 🔌 Travel Adapter</p>
 
   <p class="price">
     <span class="old-price">$109.98</span>
@@ -173,73 +222,39 @@ body{
   </p>
 
   <p class="small" style="color:#22c55e;">
-    ✅ Save $30 when bundled
+    ✅ Save $30
   </p>
 
-  <a href="https://buy.stripe.com/4gM5kw4qD9GQ5RJ8fe2ZO0r" class="btn primary">
-    ⚡ Get Combo Deal
-  </a>
-</div>
-
-<!-- BUNDLE -->
-<div class="card">
-
-  <p class="small" style="color:#facc15;">🔥 Most Popular Choice</p>
-
-  <h3>🎒 Travel Essentials Bundle</h3>
-
-  <p class="small">Everything you need for stress-free travel:</p>
-
-  <p class="small">⭐ 4.9/5 (2,000+ reviews)</p>
-  <p class="small">🚚 Free Shipping Worldwide</p>
-  <p class="small">🔒 Secure Checkout</p>
-
-  <div style="margin-top:10px;">
-    <p class="small">🧼 Toiletry Organizer</p>
-    <p class="small">😴 Memory Foam Neck Pillow</p>
-    <p class="small">⚖️ Digital Luggage Scale</p>
-    <p class="small">🛂 RFID Passport Holder</p>
-    <p class="small">📦 Packing Cubes Set</p>
-  </div>
-
-  <div class="divider"></div>
-
-  <p class="price">
-    <span class="old-price">$119.99</span>
-    $69.99
-  </p>
-
-  <p class="small" style="color:#22c55e;">
-    ✅ Save 40% — Limited bundle deal
-  </p>
-
-  <a href="https://buy.stripe.com/9B614ge1d9GQ6VN1QQ2ZO0q" class="btn primary">
-    🎒 Get Bundle Deal
+  <a href="https://buy.stripe.com/4gM5kw4qD9GQ5RJ8fe2ZO0r" class="btn">
+    ⚡ Get Bundle
   </a>
 </div>
 
 <!-- TRUST -->
 <div class="card">
   <h3>Why Travelers Choose Us</h3>
-  <p class="small">✔ 5,000+ happy customers</p>
   <p class="small">✔ Fast global shipping</p>
-  <p class="small">✔ 30-day money back guarantee</p>
+  <p class="small">✔ 30-day guarantee</p>
+  <p class="small">✔ Secure checkout</p>
 </div>
 
 <div class="footer">
-  © 2026 NorthSky Travel
+  © 2026 NorthSky Network
 </div>
 
 </div>
 
-<!-- ⏳ TIMER SCRIPT -->
+<!-- ⏳ TIMER -->
 <script>
 let time = 900;
+
 setInterval(() => {
   let m = Math.floor(time / 60);
   let s = time % 60;
+
   document.getElementById("timer").innerText =
     `${m}:${s < 10 ? "0" : ""}${s}`;
+
   if (time > 0) time--;
 }, 1000);
 </script>
